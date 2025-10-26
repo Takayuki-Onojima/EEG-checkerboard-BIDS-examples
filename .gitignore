@@ -1,0 +1,9 @@
+# Ignore everything by default
+*
+# But include these files/folders
+!code/
+!code/**
+!README.md
+!LICENSE
+!requirements.txt
+!.gitignore

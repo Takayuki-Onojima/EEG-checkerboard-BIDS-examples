@@ -100,8 +100,8 @@ def compute_subject_tfr(subject, runs, tmin, tmax, freqs, n_cycles, bids_root, d
                     if ch not in epochs.ch_names:
                         continue
                     
-                    epochs_ch = epochs.copy().pick_channels([ch])
-                    subject_epochs[intensity][ch].extend(epochs_ch)
+                    epochs_ch = epochs.copy().pick([ch])
+                    subject_epochs[intensity][ch].append(epochs_ch)
                     
                     if times_ref is None:
                         times_ref = epochs_ch.times

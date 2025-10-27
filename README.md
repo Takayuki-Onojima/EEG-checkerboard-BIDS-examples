@@ -26,12 +26,12 @@ python preprocessing.py --subjects 01 02 --runs 1 2 3 --bids_root .. --right_ear
 
 ### Group ERP Analysis
 ```bash
-python compute_group_erp.py --subjects 01 02 03 --runs 1 2 3 --tmin -0.3 --tmax 0.8 --baseline_tmin -0.3 --baseline_tmax 0
+python compute_group_erp.py --subjects 01 02 03 --runs 1 2 3 --tmin -0.3 --tmax 0.8 --baseline_tmin -0.2 --baseline_tmax -0.05
 ```
 
 ### Group TFR Analysis
 ```bash
-python compute_group_tfr.py --subjects 01 02 03 --runs 1 2 3 --tmin -0.5 --tmax 1.0 --baseline_min -0.3 --baseline_max -0.05
+python compute_group_tfr.py --subjects 01 02 03 --runs 1 2 3 --tmin -0.5 --tmax 1.0 --baseline_min -0.2 --baseline_max -0.05
 ```
 
 ---
@@ -65,6 +65,3 @@ Install required packages:
 pip install mne pandas numpy matplotlib seaborn
 ```
 
-## License
-
-This code is licensed under CC BY-NC 4.0. See LICENSE file for details.
